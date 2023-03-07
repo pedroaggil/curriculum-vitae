@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Pedro Gil">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre seu Currículo</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style/main.css">
+
+    <!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon/favicon-16x16.png">
+</head>
+<body>
+    
+    <div class="main">
+        <h1>Bem vindo à página de cadastro de currículo!</h1>
+        <br><hr><br>
+        <form method="post">
+            <span class="title">Dados pessoais</span><br><br>
+
+            <div class="genre">
+                <legend><p>Identidade de Gênero</p><br>
+                <ul><br><br><br>
+                    <li class="radio masc">
+                        <input name="genre" type="radio" id="masc" value="masc">
+                        <label for="masc"><b>Masculino</b></label>
+                    </li>
+                    <li class="radio fem">
+                        <input name="genre" type="radio" id="fem" value="fem">
+                        <label for="fem"><b>Feminino</b></label>
+                    </li><br><br><br>
+                    <li class="radio trans">
+                        <input name="genre" type="radio" id="trans" value="trans">
+                        <label for="trans"><b>Transgênero</b></label>
+                    </li>
+                    <li class="radio nb">
+                        <input name="genre" type="radio" id="nb" value="nb">
+                        <label for="nb"><b>Não-binário</b></label>
+                    </li>
+                </ul><br><br><br><br><br></legend>
+            </div>
+
+            <div id="info__basic">
+                <span class="subtitle">Informações básicas</span><hr class="sub">
+
+                <input type="text" placeholder="Nome completo"><br>
+
+                <input type="text" class="city" placeholder="Cidade">
+                <input type="text" class="uf" placeholder="Estado" max="2"><br>
+
+                <input type="text" placeholder="Título"><br>
+                <input type="text" placeholder="Setor"><br>
+
+                <input type="text" placeholder="Formação acadêmica principal"><br>
+
+                <textarea name="about" id="about" placeholder="Faça um breve relato sobre você"></textarea>
+            </div>
+            <br><br>
+            <div id="contact">
+                <span class="subtitle">Contato</span><hr class="sub">
+
+                <input type="number" maxlength="999" class="ddd" placeholder="DDD">
+                <input type="number" minlength="100000000" max="999999999" class="cell" placeholder="Celular">
+                <br>
+                <input type="email" placeholder="E-mail"><br>
+
+                <input type="text" placeholder="LinkedIn"><br>
+
+                <input type="text" placeholder="Redes Sociais"><br>
+
+                <input type="text" placeholder="Portfólio">
+            </div>
+            <br><br>
+            <div id="formation">
+                <span class="subtitle">Formação acadêmica</span><hr class="sub">
+
+                <input type="text" placeholder="Instituição"><br>
+                <select name="schoolar">
+                    <option value="null" selected disabled>-- Selecionar --</option>
+                    <option value="f1">Fundamental I</option>
+                    <option value="f2">Fundamental II</option>
+                    <option value="med">Ensino Médio</option>
+                    <option value="mtec">Ensino Técnico</option>
+                    <option value="bach">Bacharelado</option>
+                    <option value="tec">Tecnólogo</option>
+                    <option value="lic">Licenciatura</option>
+                    <option value="pos">Pós-graduação</option>
+                    <option value="mest">Mestrado</option>
+                    <option value="dout">Doutorado</option>
+                    <option value="pdout">Pós-doutorado</option>                    
+                </select><br>
+                <input type="text" placeholder="Curso"><br>
+                <input type="date" placeholder="Data de início"> até 
+                <input type="date" placeholder="Data de término"><br>
+                <textarea name="acd__about" id="acd__about" placeholder="Faça um breve relato sobre sua formação"></textarea>
+            </div>
+            <br><br>
+            <div id="experience">
+                <span class="subtitle">Experiência profissional</span><hr class="sub">
+
+                <input type="text" placeholder="Instituição"><br>
+                <input type="text" placeholder="Cargo"><br>
+                <input type="date" placeholder="Data de início"> até 
+                <input type="date" placeholder="Data de término"><br>
+                <textarea name="exp__about" placeholder="Faça um breve relato sobre sua experiência"></textarea>
+
+                <br><br>
+
+                <input type="text" placeholder="Instituição"><br>
+                <input type="text" placeholder="Cargo"><br>
+                <input type="date" placeholder="Data de início"> até 
+                <input type="date" placeholder="Data de término"><br>
+                <textarea name="exp__about" placeholder="Faça um breve relato sobre sua experiência"></textarea>
+            </div>
+            <br><br>
+            <div id="hard__skills">
+                <span class="subtitle">Habilidades</span><hr class="sub">
+
+                <input type="checkbox" name="hard" value="HTML"> HTML
+                <input type="checkbox" name="hard" value="CSS"> CSS
+                <input type="checkbox" name="hard" value="JavaScript (JS)"> JavaScript (JS)
+                <input type="checkbox" name="hard" value="PHP"> PHP
+                <input type="checkbox" name="hard" value="C#"> C#
+                <br>
+                <input type="checkbox" name="hard" value="Python"> Python
+                <input type="checkbox" name="hard" value="Sass"> Sass
+                <input type="checkbox" name="hard" value="ReactJS"> ReactJS
+                <input type="checkbox" name="hard" value="jQuery"> jQuery
+                <input type="checkbox" name="hard" value="MySQL"> MySQL
+            </div>
+            <br><br>
+            <div id="soft__skills">
+                <span class="subtitle">Habilidades</span><hr class="sub">
+
+                <input type="checkbox" name="soft" value="Empatia"> Empatia
+                <input type="checkbox" name="soft" value="Positividade"> Positividade
+                <input type="checkbox" name="soft" value="Proatividade"> Proatividade
+                <input type="checkbox" name="soft" value="Autoestima"> Autoestima
+                <input type="checkbox" name="soft" value="Ética"> Ética
+                <br>
+                <input type="checkbox" name="soft" value="Paciência"> Paciência
+                <input type="checkbox" name="soft" value="Autoconhecimento"> Autoconhecimento
+                <input type="checkbox" name="soft" value="Confiança"> Confiança
+                <input type="checkbox" name="soft" value="Liderança"> Liderança
+                <input type="checkbox" name="soft" value="Responsabilidade"> Responsabilidade
+            </div>
+            <br><br>
+            <div id="causes">
+                <span class="subtitle">Causas sociais</span><hr class="sub">
+
+                <input type="checkbox" name="cause" value="Proteção animal"> Proteção animal
+                <input type="checkbox" name="cause" value="Direitos civis e ações sociais"> Direitos civis e ações sociais
+                <input type="checkbox" name="cause" value="Assistência humanitária"> Assistência humanitária
+                <br>
+                <input type="checkbox" name="cause" value="Resposta a desastres"> Resposta a desastres
+                <input type="checkbox" name="cause" value="Combate a fome"> Combate a fome
+                <input type="checkbox" name="cause" value="Educação"> Educação
+                <input type="checkbox" name="cause" value="Meio ambiente"> Meio ambiente
+                <br>
+                <input type="checkbox" name="cause" value="Saúde"> Saúde
+                <input type="checkbox" name="cause" value="Direitos humanos"> Direitos humanos
+                <input type="checkbox" name="cause" value="Alívio à pobreza"> Alívio à pobreza
+                
+            </div>
+            <br><br>
+            <input type="submit" value=" Enviar currículo! ">
+            <br><br>
+        </form>
+    </div>
+
+    <footer>
+        &copy; 2023 &middot; Pedro Gil &middot; Desenvolvimento de Sistemas
+    </footer>
+
+</body>
+</html>

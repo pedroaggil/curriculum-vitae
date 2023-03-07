@@ -1,0 +1,207 @@
+
+/* Folha de estilo p/ projeto */
+
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&family=Tilt+Warp&display=swap');
+
+ul {
+    position: absolute;
+    margin-left:unset;
+    margin: 0;
+    top: 28%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+body { 
+    background-color: rgba(0, 191, 255, 0.3); 
+    font-family: 'Golos Text', sans-serif;
+    font-size: 12pt; 
+}
+
+body::-webkit-scrollbar { width: 12px; }
+
+body::-webkit-scrollbar-track {	background: #21B4D0; }
+
+body::-webkit-scrollbar-thumb {
+    background-color: #BDCAF0;
+    border-radius: 10px;
+    border: 2px solid #21B4D0;
+}
+
+.main {
+    width: 50vw; height: auto;
+    background-color: white;
+    border-radius: 15px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    -webkit-box-shadow: 15px 15px 15px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 15px 15px 15px 0px rgba(0,0,0,0.4);
+    box-shadow: 15px 15px 15px 0px rgba(0,0,0,0.4);
+}
+
+hr.main { border-color: black; width: 30vw; }
+hr.sub { width: 17vw; }
+
+.subtitle { font-family: 'Golos Text', sans-serif; font-weight: bold; }
+
+.center {
+    margin: 0 auto;
+    width: 40vw;
+}
+
+h1 {
+    font-family: 'Tilt Warp', cursive;
+    background:  linear-gradient(to right, #21B4D0 25%, rgb(0, 191, 255) 75%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:  transparent;
+}
+
+div { padding: 2%; }
+
+.genre { position: relative; }
+.genre ul { margin-left: -1.8vw; margin-top: 3.8vh; }
+
+span.subtitle { padding: 10px; }
+hr.sub { margin-bottom: 10px; }
+
+input { margin-bottom: 5px; }
+
+input[type=submit], button {
+    border-radius: 10px 15px 0px 20px;
+    width: 12vw; height: 8vh;
+    background:  linear-gradient(to right, #21B4D0 30%, rgba(0, 191, 255, 0.7) 70%);
+    font-weight: bold;
+    font-size: 11pt;
+}
+
+input[type=text], 
+input[type=email], 
+input[type=date],
+input[type=number], 
+select 
+{
+    width: 20vw; height: 4vh;
+    border-radius: 35px 35px 0px 35px;
+    border-color: rgba(0, 116, 155, 0.5);
+}
+
+select {
+    border-width: 2px;
+    height: 5vh !important;
+    width: 20.75vw !important;
+    margin-bottom: 1%;
+}
+
+textarea {
+    width: 20vw; height: 10vh;
+    border-radius: 25px 25px 0px 25px;
+    border-color: rgba(0, 116, 155, 0.5);
+    border-width: 2px;
+    margin-bottom: -3%;
+}
+
+input[type=date] { width: 8.5vw !important; }
+
+.city, .cell { width: 14vw !important; }
+.uf, .ddd { width: 5vw !important; }
+
+hr {
+    width: 50%;
+    margin: 0 auto;
+}
+
+span {
+    color: #21b4d0;
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+.button {
+    width: 80px;
+    height: 30px;
+    font-weight: bold;
+    margin: 0 auto;
+    background-color: #21b4d0;
+    color: white;
+}
+
+/* Definição das caixas */
+
+.radio {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 5%;
+}
+
+.radio:after {
+    content: "";
+    clear: both;
+}
+
+/* Tamanho e aparência base do radio button para gênero */
+.radio {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    float: left;
+    height: 50px;
+    position: relative;
+    width: 105px;
+    text-align: center;
+}
+
+p { color: #21b4d0; font-weight: bold; }
+
+/* Label por cima do radio button */
+
+.radio label {
+    background: #fff no-repeat center center;
+    bottom: 1px;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    left: 1px;
+    position: absolute;
+    right: 1px;
+    text-indent: 100%;
+    top: 1px;
+    white-space: nowrap;
+}
+
+.radio + .radio { margin-left: 25px; }
+
+/* Destaca o input quando selecionado, mudando a borda e adicionando um ícone*/
+
+.radio input:focus + label { outline: 2px dotted #21b4d0; }
+
+.radio input:checked + label { outline: 4px solid #21b4d0; }
+
+.masc label { background-image: url("../images/masc.png"); background-size: 40px; }
+
+.fem label { background-image: url("../images/fem.png"); background-size: 40px; }
+
+.trans label { background-image: url("../images/trans.png"); background-size: 40px; }
+
+.nb label { background-image: url("../images/nb.png"); background-size: 40px; }
+
+/* Adiciona e modela a posição do ícone em questão */
+.radio input:checked + label:after {
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8dGl0bGU+Y2hlY2tlZDwvdGl0bGU+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iY2hlY2tlZCIgZmlsbC1ydWxlPSJub256ZXJvIj4KICAgICAgICAgICAgPHBhdGggZD0iTTEwLjAwNDkyODUsMjAgQzE1LjQ5NTMxNzksMjAgMjAsMTUuNDkzMDk2NiAyMCwxMCBDMjAsNC40OTcwNDE0MiAxNS40OTUzMTc5LDAgOS45OTUwNzE0NiwwIEM0LjUwNDY4MjExLDAgMCw0LjQ5NzA0MTQyIDAsMTAgQzAsMTUuNDkzMDk2NiA0LjUwNDY4MjExLDIwIDEwLjAwNDkyODUsMjAgWiIgZmlsbD0iIzIxQjREMCI+PC9wYXRoPgogICAgICAgICAgICA8cGF0aCBkPSJNOS4wNDQ0MDE1NCwxNiBDOC41OTA3MzM1OSwxNiA4LjIzMzU5MDczLDE1Ljc3NDM1OSA3Ljk1MzY2Nzk1LDE1LjQyNTY0MSBMNS4zMzc4Mzc4NCwxMi4xNjQxMDI2IEM1LjA5NjUyNTEsMTEuODc2OTIzMSA1LDExLjYxMDI1NjQgNSwxMS4yOTIzMDc3IEM1LDEwLjYyNTY0MSA1LjUzMDg4ODAzLDEwLjA5MjMwNzcgNi4xNDg2NDg2NSwxMC4wOTIzMDc3IEM2LjUwNTc5MTUxLDEwLjA5MjMwNzcgNi43ODU3MTQyOSwxMC4yNTY0MTAzIDcuMDM2Njc5NTQsMTAuNTUzODQ2MiBMOS4wMjUwOTY1MywxMy4wNTY0MTAzIEwxMi44MTg1MzI4LDYuNjg3MTc5NDkgQzEzLjA5ODQ1NTYsNi4yMzU4OTc0NCAxMy40MTY5ODg0LDYgMTMuODMyMDQ2Myw2IEMxNC40NDAxNTQ0LDYgMTUsNi40ODIwNTEyOCAxNSw3LjE0ODcxNzk1IEMxNSw3LjQwNTEyODIxIDE0LjkwMzQ3NDksNy42OTIzMDc2OSAxNC43MzkzODIyLDcuOTU4OTc0MzYgTDEwLjEyNTQ4MjYsMTUuMzY0MTAyNiBDOS44NjQ4NjQ4NiwxNS43NTM4NDYyIDkuNDY5MTExOTcsMTYgOS4wNDQ0MDE1NCwxNiBaIiBpZD0iUGF0aCIgZmlsbD0iI0ZGRkZGRiI+PC9wYXRoPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+);
+    bottom: -10px;
+    content: "";
+    display: inline-block;
+    height: 20px;
+    position: absolute;
+    right: -10px;
+    width: 20px;
+}
+
+footer { /* Rodapé ao fim da página */
+    padding: 3%;
+    text-align: center;
+    color: #322D36;
+    font: italic 12pt sans-serif;
+}
